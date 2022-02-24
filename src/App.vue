@@ -1,25 +1,22 @@
 <template>
     <div id="app">
-        <input v-model="message" type="text">
-        <h2 class="message">{{ message }}</h2>
-        <h3>One More Message</h3>
+        <test></test>
     </div>
 </template>
 
 <script>
+  import Test from './components/Test.vue'
+
   export default {
-    data() {
-      return {
-        message: 'Hallo Welt',
-      };
+    components: {
+      Test
     },
-  };
+    data() {
+      return {}
+    }
+  }
 </script>
 
-<style>
-    #app {
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-        color: blue;
-    }
+<style lang="scss">
+    @import "scss/main";
 </style>
