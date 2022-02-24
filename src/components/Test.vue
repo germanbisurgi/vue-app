@@ -12,7 +12,7 @@
     data() {
       return {
         message: 'Hallo Welt',
-      };
+      }
     },
-  };
+  }
 </script>
