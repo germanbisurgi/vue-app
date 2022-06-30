@@ -9,6 +9,17 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        options: {
+          configFile: './.eslintrc.json',
+          cache: false,
+          fix: true
+        }
+      },
       { test: /\.js$/, use: 'babel-loader' },
       { test: /\.vue$/, use: 'vue-loader' },
       { test: /\.scss$/, use: ['vue-style-loader', 'css-loader', 'sass-loader']},
