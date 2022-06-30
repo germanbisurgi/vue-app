@@ -1,0 +1,4 @@
+- codeceptjs
+- i18n
+- store
+- less loader
