@@ -1,6 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
@@ -20,9 +20,18 @@ module.exports = {
           fix: true
         }
       },
-      { test: /\.js$/, use: 'babel-loader' },
-      { test: /\.vue$/, use: 'vue-loader' },
-      { test: /\.scss$/, use: ['vue-style-loader', 'css-loader', 'sass-loader']},
+      {
+        test: /\.js$/,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: ['vue-style-loader', 'css-loader', 'sass-loader']
+      }
     ]
   },
   devServer: {
@@ -34,6 +43,6 @@ module.exports = {
       template: './src/index.html',
     }),
     new VueLoaderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
-};
+}
