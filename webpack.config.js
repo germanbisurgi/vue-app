@@ -1,11 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: __dirname + '/dist'
+    path: path.join(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -36,11 +37,11 @@ module.exports = {
   },
   devServer: {
     open: true,
-    hot: true,
+    hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html'
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin()

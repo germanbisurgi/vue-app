@@ -1,14 +1,14 @@
 {
-  "name": "vue-test",
+  "name": "vue-app-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:germanbisurgi/vue-test.git",
-  "author": "g.bisurgi <g.bisurgi@herzogkommunikation.de>",
+  "repository": "git@github.com:germanbisurgi/vue-app-template.git",
+  "author": "g.bisurgi <gbisurgi@protonmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "webpack-dev-server --mode development",
     "clean": "rimraf dist",
-    "build": "yarn clean && webpack --mode production",
-    "serve": "webpack-dev-server --mode development"
+    "build": "yarn clean && webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
