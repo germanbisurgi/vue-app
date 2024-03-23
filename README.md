@@ -36,3 +36,6 @@ This command will start webpack-dev-server in development mode, allowing you to 
 - `dev`: Runs webpack-dev-server in development mode.
 - `clean`: Cleans the `dist` directory.
 - `build`: Builds the production-ready version of the project.
+- `lint`: Runs ESLint to check for linting errors in JavaScript and Vue.js files within the `./src` directory.
+- `lint:fix`: Runs ESLint with the --fix option to automatically fix linting errors in JavaScript and Vue.js files within the ./src directory.
+
