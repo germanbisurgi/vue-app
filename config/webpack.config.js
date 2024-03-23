@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {VueLoaderPlugin} = require('vue-loader')
+const ESLintPlugin = require('eslint-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -10,17 +11,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        options: {
-          configFile: './config/.eslintrc.json',
-          cache: false,
-          fix: true
-        }
-      },
       {
         test: /\.vue$/,
         use: 'vue-loader'
@@ -38,6 +28,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new ESLintPlugin({
+      overrideConfigFile: './config/eslint.config.js',
+      cache: false,
+      fix: true
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin()
