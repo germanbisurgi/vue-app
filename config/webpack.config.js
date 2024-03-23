@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const {VueLoaderPlugin} = require('vue-loader')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -16,14 +16,10 @@ module.exports = {
         loader: 'eslint-loader',
         enforce: 'pre',
         options: {
-          configFile: './.eslintrc.json',
+          configFile: './config/.eslintrc.json',
           cache: false,
           fix: true
         }
-      },
-      {
-        test: /\.js$/,
-        use: 'babel-loader'
       },
       {
         test: /\.vue$/,
@@ -31,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['vue-style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },

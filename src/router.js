@@ -1,21 +1,21 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createMemoryHistory, createRouter } from 'vue-router'
 import Home from './views/PageHome.vue'
 import About from './views/PageAbout.vue'
 
-Vue.use(VueRouter)
+const routes = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/about',
+    component: About
+  }
+]
 
-const router = new VueRouter({
-  routes: [
-    {
-      path: '/',
-      component: Home
-    },
-    {
-      path: '/about',
-      component: About
-    }
-  ]
+const router = createRouter({
+  history: createMemoryHistory(),
+  routes
 })
 
 export default router
