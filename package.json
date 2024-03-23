@@ -8,12 +8,14 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./config/webpack.config.js --mode development",
     "clean": "rimraf dist",
-    "build": "yarn clean && webpack --config ./config/webpack.config.js --mode production"
+    "build": "yarn clean && webpack --config ./config/webpack.config.js --mode production",
+    "lint": "yarn eslint --config ./config/.eslintrc.js --ext .js,.vue ./src",
+    "lint:fix": "yarn eslint --fix  --config ./config/.eslintrc.js --ext .js,.vue ./src"
   },
   "devDependencies": {
     "css-loader": "^6.5.1",
     "eslint": "^8.57.0",
-    "eslint-webpack-plugin": "^4.1.0",
+    "eslint-plugin-vue": "^9.23.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^9.0.0",
     "rimraf": "^3.0.2",
