@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <app-navigation />
+  <div>
+    <app-navbar />
     <router-view />
+    <app-footer />
   </div>
 </template>
 
 <script>
-  import AppNavigation from '@/components/AppNavigation.vue'
+import AppNavbar from '@/components/AppNavbar.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
-  export default {
-    components: {
-      AppNavigation
-    },
-    data() {
-      return {}
-    }
+export default {
+  components: {
+    AppNavbar,
+    AppFooter
+  },
+  data() {
+    return {}
   }
+}
 </script>
 
 <style lang="scss">
-    @import "scss/main";
+@import "scss/main";
 </style>

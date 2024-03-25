@@ -1,0 +1,18 @@
+$appNavbarHeight : 50px;
+
+.app-navbar {
+  height: $appNavbarHeight;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .app-navbar-item {
+    margin: 0 $spacer;
+  }
+}

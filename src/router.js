@@ -1,15 +1,32 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
-import Home from './views/PageHome.vue'
-import About from './views/PageAbout.vue'
+import Home from './views/AppHome.vue'
+import About from './views/AppAbout.vue'
+import DataPrivacy from './views/AppDataPrivacy.vue'
 
 const routes = [
   {
     path: '/',
-    component: Home
+    name: 'Home',
+    component: Home,
+    meta: {
+      navbar: true
+    }
   },
   {
     path: '/about',
-    component: About
+    name: 'About',
+    component: About,
+    meta: {
+      navbar: true
+    }
+  },
+  {
+    path: '/data-provacy',
+    name: 'Data Privacy',
+    component: DataPrivacy,
+    meta: {
+      footer: true
+    }
   }
 ]
 

@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    assetModuleFilename: 'images/[name][ext]'
+    assetModuleFilename: 'assets/[name][ext]'
   },
   module: {
     rules: [
@@ -35,8 +35,9 @@ module.exports = {
     })
   ],
   resolve: {
+    extensions: ['.js', '.json', '.wasm', '.vue'],
     alias: {
       '@': path.resolve(__dirname, '../src')
-    },
+    }
   }
 }
