@@ -1,5 +1,4 @@
 - codeceptjs
-- store
 - light/dark mode
 - app-nav
 - console warning

@@ -9,10 +9,15 @@
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import useAppStore from '@/store/app'
+
 export default {
   name: 'AppLanguageSelector',
-  data () {
-    return { languages: ['en', 'de'] }
+  computed: {
+    ...mapState(useAppStore, [
+        'languages'
+    ])
   }
 }
 </script>
