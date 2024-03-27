@@ -1,5 +1,4 @@
 - codeceptjs
-- i18n
 - store
 - light/dark mode
 - app-nav
