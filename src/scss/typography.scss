@@ -1,3 +1,14 @@
+$font-family-sans-serif: "Roboto-Regular";
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(@/scss/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+  font-family: $font-family-sans-serif;
+}
+
 p {
   margin-bottom: $spacer;
 }
