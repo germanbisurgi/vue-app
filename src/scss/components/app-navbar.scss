@@ -16,3 +16,7 @@ $appNavbarHeight : 50px;
     margin: 0 $spacer;
   }
 }
+
+#app {
+  padding-top: $appNavbarHeight;
+}

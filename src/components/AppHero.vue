@@ -1,7 +1,7 @@
 <template>
   <header class="app-hero">
     <h1>GERMÁN BISURGI</h1>
-    <p>Web Developer</p>
+    <p>{{ $t('jobDescription') }}</p>
   </header>
 </template>
 
