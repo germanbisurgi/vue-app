@@ -1,0 +1,23 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node version
+        run: node -v
+      - name: Install
+        run: yarn install
+      - name: Unit tests
+        run: yarn unit
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node version
+        run: node -v
+      - name: Install
+        run: yarn install
+      - name: E2E tests
+        run: yarn dev & yarn e2e
