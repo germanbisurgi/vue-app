@@ -1,5 +1,0 @@
-- codeceptjs
-- light/dark mode
-- app-nav
-- console warning
-- screen reader accessible

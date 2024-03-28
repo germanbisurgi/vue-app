@@ -34,6 +34,8 @@ This command will start webpack-dev-server in development mode, allowing you to 
 ## Scripts
 
 - `dev`: Runs webpack-dev-server in development mode.
+- `e2e`: Runs end-to-end tests using CodeceptJS.
+- `unit`: Runs unit tests using Jest.
 - `clean`: Cleans the `dist` directory.
 - `build`: Builds the production-ready version of the project.
 - `lint`: Runs ESLint to check for linting errors in JavaScript and Vue.js files within the `./src` directory.

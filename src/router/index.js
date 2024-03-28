@@ -1,7 +1,7 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
-import Home from '@/views/AppHome.vue'
-import About from '@/views/AppAbout.vue'
-import DataPrivacy from '@/views/AppDataPrivacy.vue'
+import Home from '@/pages/AppHome.vue'
+import About from '@/pages/AppAbout.vue'
+import DataPrivacy from '@/pages/AppDataPrivacy.vue'
 
 const routes = [
   {

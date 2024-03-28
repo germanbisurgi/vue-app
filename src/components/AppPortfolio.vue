@@ -1,10 +1,13 @@
 <template>
-  <section class="app-portfolio">
-    <div v-for="project in projects" :key="project.name" class="app-portfolio-teaser">
-      <img :src="project.image" :alt="project.name + ' teaser'">
-      <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-      <a :href="project.link" target="_blank">See on GitHub</a>
+  <section>
+    <h2>Portfolio</h2>
+    <div class="app-portfolio">
+      <div v-for="project in projects" :key="project.name" class="app-portfolio-teaser">
+        <img :src="project.image" :alt="project.name + ' teaser'">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <a :href="project.link" target="_blank">See on GitHub</a>
+      </div>
     </div>
   </section>
 </template>

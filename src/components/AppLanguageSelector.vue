@@ -1,6 +1,7 @@
 <template>
   <div class="locale-changer">
-    <select v-model="$i18n.locale">
+    <label for="language-selector">language</label>
+    <select v-model="$i18n.locale" id="language-selector">
       <option v-for="lang in languages" :key="lang" :value="lang">
         {{ lang }}
       </option>
