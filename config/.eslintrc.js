@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	extends: [
 		'eslint:recommended',
 		'plugin:vue/base',
@@ -7,9 +7,7 @@ module.exports = {
 		'plugin:vue/vue3-strongly-recommended',
 	],
 	"env" : {
-		"browser" : true,
-		"node" : true,
-		"es6" : true
+		"es2021" : true
 	},
 	"rules" : {
 		"no-unused-vars" : 2,
