@@ -1,8 +1,8 @@
 <template>
   <section>
     <h2>Portfolio</h2>
-    <div class="app-portfolio">
-      <div v-for="project in projects" :key="project.name" class="app-portfolio-teaser">
+    <div class="portfolio">
+      <div v-for="project in projects" :key="project.name" class="portfolio-teaser">
         <img :src="project.image" :alt="project.name + ' teaser'">
         <h3>{{ project.name }}</h3>
         <p>{{ project.description }}</p>

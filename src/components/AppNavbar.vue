@@ -1,15 +1,24 @@
 <template>
-  <nav class="app-navbar">
-    <app-language-selector />
-    <router-link v-for="route in routes" :key="route.name" class="app-navbar-item" :to="route.path">
-      {{ route.name }}
-    </router-link>
-    <a class="app-navbar-item" target="_blank" href="https://github.com/germanbisurgi">GitHub</a>
-  </nav>
+  <div class="navbar">
+    <div class="navbar-brand">
+      <router-link to="/">
+        <img src="@/assets/vue-logo.png" alt="A green V">
+      </router-link>
+    </div>
+    <nav class="navbar-nav">
+      <app-language-selector/>
+      <router-link v-for="route in routes" :key="route.name" class="navbar-item" :to="route.path">
+        {{ route.name }}
+      </router-link>
+      <a class="navbar-item" target="_blank" href="https://github.com/germanbisurgi">GitHub</a>
+    </nav>
+  </div>
+
 </template>
 
 <script>
 import AppLanguageSelector from "@/components/AppLanguageSelector.vue";
+
 export default {
   name: 'AppNavbar',
   components: {

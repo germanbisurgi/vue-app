@@ -1,5 +1,5 @@
 <template>
-  <nav class="app-footer">
+  <nav class="footer">
     <router-link v-for="route in routes" :key="route.name" :to="route.path">
       <span>{{ route.name }}</span>
     </router-link>

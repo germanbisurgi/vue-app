@@ -1,5 +1,5 @@
 <template>
-  <header class="app-hero">
+  <header class="hero">
     <h1>GERMÁN BISURGI</h1>
     <p>{{ $t('jobDescription') }}</p>
   </header>

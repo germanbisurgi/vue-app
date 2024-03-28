@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <app-hero />
     <app-portfolio />
-    <img src="@/assets/vue-logo.png" alt="A green V">
   </div>
 </template>
 

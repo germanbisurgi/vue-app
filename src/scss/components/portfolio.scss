@@ -1,0 +1,17 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $white;
+
+  .portfolio-teaser {
+    width: 100%;
+    border: 1px solid black;
+    padding: $spacer;
+    margin-bottom: $spacer;
+
+    @media screen and (min-width: 1000px) {
+      width: calc(33.33% - $spacer);
+    }
+  }
+}
