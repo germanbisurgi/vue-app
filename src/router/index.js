@@ -1,7 +1,6 @@
 import { createMemoryHistory, createRouter } from 'vue-router'
 import Home from '@/pages/AppHome.vue'
 import About from '@/pages/AppAbout.vue'
-import DataPrivacy from '@/pages/AppDataPrivacy.vue'
 
 const routes = [
   {
@@ -18,14 +17,6 @@ const routes = [
     component: About,
     meta: {
       navbar: true
-    }
-  },
-  {
-    path: '/data-provacy',
-    name: 'Data Privacy',
-    component: DataPrivacy,
-    meta: {
-      footer: true
     }
   }
 ]

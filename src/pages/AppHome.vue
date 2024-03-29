@@ -1,19 +1,12 @@
 <template>
   <div class="container">
-    <app-hero />
-    <app-portfolio />
+    <h1>{{ $t('Home') }}</h1>
+    <img src="@/assets/vue-logo.png" alt="A green V">
   </div>
 </template>
 
 <script>
-import AppHero from '@/components/AppHero.vue'
-import AppPortfolio from '@/components/AppPortfolio.vue'
-
 export default {
-  name: 'AppHome',
-  components: {
-    AppHero,
-    AppPortfolio
-  }
+  name: 'AppHome'
 }
 </script>

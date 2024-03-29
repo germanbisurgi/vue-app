@@ -2,26 +2,29 @@ $appNavbarHeight: 50px;
 
 .navbar {
   width: 100%;
-  height: $appNavbarHeight;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   background-color: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  .navbar-brand {
-    width: 100px;
-  }
-
-  .navbar-nav {
+  .navbar-inner {
+    height: $appNavbarHeight;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    .navbar-item {
-      margin: 0 $spacer;
+    .navbar-brand {
+      width: 100px;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+
+      .navbar-item {
+        margin: 0 $spacer;
+      }
     }
   }
 }

@@ -4,10 +4,12 @@ const index = createI18n({
   locale: 'en',
   messages: {
     en: {
-      jobDescription: 'Web Developer'
+      home: 'Home',
+      about: 'About'
     },
     de: {
-      jobDescription: 'Web Entwickler'
+      home: 'Home',
+      about: 'About'
     }
   }
 })

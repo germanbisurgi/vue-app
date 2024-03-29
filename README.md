@@ -1,10 +1,10 @@
 # Vue App Template
 
-A Vue.js application template configured with webpack for quick setup and development.
+A Vue.js application template configured with vite for quick setup and development.
 
 ## Introduction
 
-Vue App Template is a project scaffold for Vue.js applications. It comes pre-configured with webpack, allowing you to start building your Vue applications quickly and efficiently.
+Vue App Template is a project scaffold for Vue.js applications. It comes pre-configured with vite, allowing you to start building your Vue applications quickly and efficiently.
 
 ## Installation
 
@@ -29,15 +29,14 @@ After installing dependencies, you can run the development server using the foll
 yarn dev
 ```
 
-This command will start webpack-dev-server in development mode, allowing you to view and test your Vue application in the browser.
+This command will start vite in development mode, allowing you to view and test your Vue application in the browser.
 
 ## Scripts
 
-- `dev`: Runs webpack-dev-server in development mode.
+- `dev`: Runs Vite development server.
+- `serve`: Serves the project using Vite's preview mode.
 - `e2e`: Runs end-to-end tests using CodeceptJS.
 - `unit`: Runs unit tests using Jest.
-- `clean`: Cleans the `dist` directory.
 - `build`: Builds the production-ready version of the project.
 - `lint`: Runs ESLint to check for linting errors in JavaScript and Vue.js files within the `./src` directory.
-- `lint:fix`: Runs ESLint with the --fix option to automatically fix linting errors in JavaScript and Vue.js files within the ./src directory.
-
+- `lint:fix`: Runs ESLint with the --fix option to automatically fix linting errors in JavaScript and Vue.js files within the `./src` directory.
