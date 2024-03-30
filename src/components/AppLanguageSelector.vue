@@ -1,9 +1,9 @@
 <template>
   <div class="locale-changer">
-    <label for="language-selector">language</label>
+    <label for="language-selector">{{ $t('language') }}</label>
     <select id="language-selector" v-model="$i18n.locale">
       <option v-for="lang in languages" :key="lang" :value="lang">
-        {{ lang }}
+        {{ $t(lang) }}
       </option>
     </select>
   </div>

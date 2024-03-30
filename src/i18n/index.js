@@ -4,12 +4,18 @@ const index = createI18n({
   locale: 'en',
   messages: {
     en: {
+      language: 'Language',
       home: 'Home',
-      about: 'About'
+      about: 'About',
+      en: 'English',
+      de: 'German'
     },
     de: {
-      home: 'Home',
-      about: 'About'
+      language: 'Sprache',
+      home: 'Startseite',
+      about: 'Über',
+      en: 'Englisch',
+      de: 'Deutsch'
     }
   }
 })

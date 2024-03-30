@@ -10,7 +10,7 @@
         <nav class="navbar-nav">
           <app-language-selector />
           <router-link v-for="route in routes" :key="route.name" class="navbar-item" :to="route.path">
-            {{ route.name }}
+            {{ $t(route.name) }}
           </router-link>
           <a class="navbar-item" target="_blank" href="https://github.com/germanbisurgi/vue-app-template">GitHub</a>
         </nav>

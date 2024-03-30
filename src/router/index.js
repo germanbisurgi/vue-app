@@ -5,7 +5,7 @@ import About from '@/pages/AppAbout.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home,
     meta: {
       navbar: true
@@ -13,7 +13,7 @@ const routes = [
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: About,
     meta: {
       navbar: true
