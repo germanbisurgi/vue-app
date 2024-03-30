@@ -7,7 +7,7 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://localhost:8080',
-      show: true,
+      show: false,
       waitForAction: 500,
       waitForTimeout: 10000,
       windowSize: '1200x600'
