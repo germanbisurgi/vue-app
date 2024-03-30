@@ -1,2 +1,0 @@
-- fix e2e test workflow
-- consider docker for tests and deployment
