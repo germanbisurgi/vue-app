@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-const index = createI18n({
+const i18n = createI18n({
   locale: 'en',
   messages: {
     en: {
@@ -20,4 +20,4 @@ const index = createI18n({
   }
 })
 
-export default index
+export default i18n
