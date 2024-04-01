@@ -30,4 +30,4 @@ jobs:
       - name: Install
         run: yarn install
       - name: E2E tests
-        run: yarn dev & yarn e2e
+        run: yarn serve & yarn e2e
