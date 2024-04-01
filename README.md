@@ -1,3 +1,5 @@
+[![Tests](https://github.com/germanbisurgi/vue-app-template/actions/workflows/main.yml/badge.svg)](https://github.com/germanbisurgi/vue-app-template/actions/workflows/main.yml)
+
 # Vue App Template
 
 A Vue.js application template configured with vite for quick setup and development.
