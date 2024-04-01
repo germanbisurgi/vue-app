@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-const useAppStore = defineStore('counter', {
+const useAppStore = defineStore('app', {
   state: () => ({
     languages: ['en', 'de'],
   }),
