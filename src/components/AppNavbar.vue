@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import AppLanguageSelector from "@/components/AppLanguageSelector.vue";
+import AppLanguageSelector from "@/components/AppLanguageSelector.vue"
 
 export default {
   name: 'AppNavbar',
