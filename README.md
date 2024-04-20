@@ -1,44 +1,54 @@
 [![Tests](https://github.com/germanbisurgi/vue-app-template/actions/workflows/main.yml/badge.svg)](https://github.com/germanbisurgi/vue-app-template/actions/workflows/main.yml)
 
-# SPA Template
-
-A Vue.js application template configured with vite for quick setup and development.
-
-## Introduction
+# vue-app
 
 Vue App Template is a project scaffold for Vue.js applications. It comes pre-configured with vite, allowing you to start building your Vue applications quickly and efficiently.
 
-## Installation
-
-To get started with Vue App Template, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:germanbisurgi/vue-app-template.git
-   cd vue-app-template
-   ```
-
-2. Install dependencies:
-   ```bash
-   yarn install
-   ```
-
 ## Usage
 
-After installing dependencies, you can run the development server using the following command:
+Install dependencies:
+```bash
+yarn install
+```
+
+Start vite in development mode, allowing you to view and test your Vue application in the browser.
 
 ```bash
 yarn dev
 ```
 
-This command will start vite in development mode, allowing you to view and test your Vue application in the browser.
+Builds the production-ready version of the project.
 
-## Scripts
+```bash
+yarn build
+```
 
-- `dev`: Runs Vite development server.
-- `serve`: Serves the project using Vite's preview mode.
-- `e2e`: Runs end-to-end tests using CodeceptJS.
-- `unit`: Runs unit tests using Jest.
-- `build`: Builds the production-ready version of the project.
-- `lint`: Runs ESLint to check for linting errors in JavaScript and Vue.js files within the `./src` directory.
-- `lint:fix`: Runs ESLint with the --fix option to automatically fix linting errors in JavaScript and Vue.js files within the `./src` directory.
+Serves the project using Vite's preview mode.
+
+```bash
+yarn serve
+```
+
+Runs end-to-end tests using CodeceptJS.
+
+```bash
+yarn e2e
+```
+
+Runs unit tests using Jest.
+
+```bash
+yarn unit
+```
+
+Runs ESLint to check for linting errors in .js and .vue files within the `./src` directory.
+
+```bash
+yarn lint
+```
+
+Runs ESLint with the --fix option to automatically fix linting errors in .js and .vue files within the `./src` directory.
+```bash
+yarn int:fix
+```
+
