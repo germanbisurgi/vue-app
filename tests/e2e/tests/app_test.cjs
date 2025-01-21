@@ -2,7 +2,10 @@
 
 Feature('app')
 
-Scenario('@app should open app', ({ I }) => {
+BeforeSuite(({I}) => {
   I.amOnPage('/')
+});
+
+Scenario('@app should open app', ({ I }) => {
   I.waitForText('Home')
 })
