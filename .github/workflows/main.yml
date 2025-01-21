@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: E2E tests
-        run: yarn serve & yarn e2e
+        run: yarn serve & sleep 5 & yarn e2e
       - name: Test Artifacts
         if: always()
         uses: actions/upload-artifact@v4
