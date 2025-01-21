@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>{{ $t('home') }}</h1>
-    <img src="@/assets/vue-logo.png" alt="A green V">
+    <img class="img-fluid" src="@/assets/vue-logo.png" alt="A green V">
   </div>
 </template>
 
