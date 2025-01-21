@@ -7,10 +7,15 @@ exports.config = {
   helpers: {
     Puppeteer: {
       url: 'http://localhost:8081',
-      show: false,
+      show: true,
       waitForAction: 500,
-      waitForTimeout: 10000,
-      windowSize: '1200x600'
+      waitForTimeout: 5000,
+      windowSize: '1200x600',
+      restart: false,
+      waitForNavigation: [ 'load', 'networkidle0' ],
+      chrome: {
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+      }
     }
   }
 }
