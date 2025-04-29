@@ -49,6 +49,6 @@ yarn lint
 
 Runs ESLint with the --fix option to automatically fix linting errors in .js and .vue files within the `./src` directory.
 ```bash
-yarn int:fix
+yarn lint:fix
 ```
 
